@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<script src="../js/index.js">
+</script>
+</head>
+<body>
+
+<h1>This is a Heading</h1>
+<p>This is a paragraph......................</p>
+<section>
+    <h4>Html</h4>
+    <h4>Css</h4>
+    <h4>python</h4>
+    <h4>js &#128540;</h4>
+</section>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/6.6.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#reserved-urls -->
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+<script>
+    // css counter 
+</script>
+<style>
+    section {
+        counter-reset: tidbit-counter;
+    }
+
+    h4::before {
+    counter-increment: tidbit-counter;
+    content: counter(tidbit-counter) ":: ";
+    }
+</style>
+</body>
+</html>
